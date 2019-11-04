@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Add Alarm Alert"
+        android:icon="@drawable/add"
+        android:id="@+id/add_clock"/>
+    <item
+        android:id="@+id/about_calendar"
+        android:icon="@drawable/about_calendar"
+        android:title="Check Calendar"/>
+    <item
+        android:id="@+id/explain"
+        android:icon="@drawable/explain"
+        android:title="Use Instruction" />
+
+</menu>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.roxy.mycalendar">
+
+    <application
+        android:name="org.litepal.LitePalApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".EditSchedule"></activity>
+        <activity android:name=".LostFind" />
+        <activity android:name=".Register" />
+        <activity android:name=".MyCalendarView" />
+        <activity android:name=".MyClock" />
+        <activity android:name=".Support" />
+        <activity android:name=".AboutCalendar" />
+        <activity android:name=".AddClock" />
+        <activity android:name=".ClockDetail" />
+
+        <receiver
+            android:name=".CallAlarm"
+            android:process=".remote" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AlarmAlert"
+            android:label="@string/app_name" />
+    </application>
+
+</manifest>
